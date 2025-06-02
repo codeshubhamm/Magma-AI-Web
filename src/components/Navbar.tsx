@@ -37,10 +37,10 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 py-2 sm:py-3 md:py-4 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled 
-          ? "bg-white/80 backdrop-blur-md shadow-sm" 
-          : "bg-transparent"
+          ? "bg-white/80 backdrop-blur-md shadow-sm py-1 sm:py-2 md:py-2"
+          : "bg-transparent py-2 sm:py-3 md:py-4"
       )}
     >
       <div className="container flex items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -53,7 +53,11 @@ const Navbar = () => {
           }}
           aria-label="Magma Studio"
         >
-          <span className="text-2xl font-bold text-gray-900">Magma Studio</span>
+          <img 
+            src="/MAGMA STUDIO LOGO 1.png" 
+            alt="Magma Studio Logo" 
+            className="h-24 w-auto" 
+          />
         </a>
 
         {/* Desktop Navigation */}
